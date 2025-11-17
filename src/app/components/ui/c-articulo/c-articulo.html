@@ -13,7 +13,12 @@
   </p>
   <p class="">
     🚚&nbsp;
-    <span class="c-articulo__entrega c-articulo__entrega--positivo">{{precioEnvio | currency}}</span>&nbsp;
+    @if (precioEnvio > 0 ) {
+      <span class="c-articulo__entrega c-articulo__entrega--positivo">{{precioEnvio | currency}}</span>&nbsp;
+    }
+    @else {
+      <span class="c-articulo__entrega c-articulo__entrega--positivo">Envío gratis</span>&nbsp;
+    }
     <span class="c-articulo__entrega c-articulo__entrega--negativo">{{fechaEntrega| date:'shortDate'}}</span>
   </p>
   <p class="c-articulo__otras-opciones g--margin-top-2">
