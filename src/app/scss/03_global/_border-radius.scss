@@ -1,5 +1,5 @@
 @use "sass:list";
-@use './01_utilities/variables' as utilities;
+@use "../01_utilities/_variables" as utilities;
 
 :root {
   @for $i from 1 through list.length(utilities.$border-radius) {
@@ -9,7 +9,7 @@
 }
 
 @for $i from 1 through list.length(utilities.$border-radius) {
-    .g-border-radius-#{$i} {
+    .g--border-radius-#{$i} {
         border-radius: var(--mlt-sys-border-radius-#{$i});
     }
 }
