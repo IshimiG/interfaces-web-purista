@@ -1,8 +1,11 @@
+
 .c-articulo {
   --c-articulo-font-family: var(--mlt-sys-font-family-ponnala);
+  --c-articulo-width:var(--mlt-sys-width-197);
+  --c-articulo-font-size-small: var(--mlt-sys-font-size-2);
+  --c-articulo-font-size-medium: var(--mlt-sys-font-size-6);
+  --c-articulo-font-size-large: var(--mlt-sys-font-size-8);
   --c-articulo-title-color: var(--mlt-sys-color-principal-1);
-  --c-articulo-title-font-size: 14px;
-  --c-articulo-title-font-weight: 500;
   --c-articulo-precio-color: var(--mlt-sys-color-principal-1);
   --c-articulo-precio-actual-color: var(--mlt-sys-color-rojo-5);
   --c-articulo-precio-anterior-color: var(--mlt-sys-color-gris-5);
@@ -13,35 +16,36 @@
   width: 197px;
  
   &__title {
-    font-size: 14px;
+    font-size: var(--c-articulo-font-size-large);
     font-weight: 500;
     color: var(--c-articulo-title-color);
   }
  
   &__precio {
-    font-size: 14px;
+    font-size: var(--c-articulo-font-size-medium);
     margin-top: 4px;
     margin-bottom: 4px;
     &--actual {
-      font-size: 17px;
+      font-size: var(--c-articulo-font-size-medium);
       font-weight: 700;
       color: var(--c-articulo-precio-actual-color);
     }
  
     &--anterior {
-      font-size: 14px;
+      font-size: var(--c-articulo-font-size-medium);
       color: var(--c-articulo-precio-anterior-color);
       text-decoration: line-through;
     }
  
     &--envio {
+      font-size: var(--c-articulo-font-size-medium);
       color: var(--c-articulo-precio-envio-color);
       font-weight: 600;
     }
   }
  
   &__valoracion {
-    font-size: 13px;
+    font-size: var(--c-articulo-font-size-small);
     font-weight: 600;
     color: var(--c-articulo-title-color);
   }

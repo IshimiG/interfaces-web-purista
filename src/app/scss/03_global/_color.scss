@@ -12,7 +12,7 @@
 @each $nombre, $tonalidad in utilities.$colores {
     @for $i from 1 through list.length($tonalidad) {
         .g--color-#{$nombre}-#{$i} {
-            color: var(--mlt-sys-color-#{$nombre}-#{$i});
+            color: var(--mlt-sys-color-#{$nombre}-#{$i}) !important;
         }
     }
 }
@@ -20,7 +20,7 @@
 @each $nombre, $tonalidad in utilities.$colores {
     @for $i from 1 through list.length($tonalidad) {
         .g--background-color-#{$nombre}-#{$i} {
-            background-color: var(--mlt-sys-color-#{$nombre}-#{$i});
+            background-color: var(--mlt-sys-color-#{$nombre}-#{$i}) !important;
         }
     }
 }
@@ -28,7 +28,7 @@
 @each $nombre, $tonalidad in utilities.$colores {
     @for $i from 1 through list.length($tonalidad) {
         .g--border-color-#{$nombre}-#{$i} {
-            border-color: var(--mlt-sys-color-#{$nombre}-#{$i});
+            border-color: #{list.nth($tonalidad, $i)} !important;
         }
     }
 }
