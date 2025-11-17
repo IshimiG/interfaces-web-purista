@@ -1,0 +1,20 @@
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {CommonModule} from '@angular/common';
+ 
+@Component({
+  selector: 'c-articulo',
+  imports: [CommonModule],
+  templateUrl: './c-articulo.html',
+  styleUrl: './c-articulo.scss'
+})
+export class CArticulo  {
+  @Input() nombre:string="";
+  @Input() urlImagen:string="";
+  @Input() precioActual:number=0;
+  @Input() precioAnterior:number=0;
+  @Input() valoracion:number=0;
+  @Input() numeroOpiniones:number=0;
+  @Input() fechaEntrega:Date=new Date();
+  @Input() precioEnvio:number=0;
+  @Input() otrosEnvios:boolean=false;
+}

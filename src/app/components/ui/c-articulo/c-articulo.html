@@ -1,0 +1,22 @@
+<div class="c-articulo g--font-family-roboto">
+  <img class="c-articulo__image" src="{{urlImagen}}" >
+  <h3 class="c-articulo__title">{{nombre}}</h3>
+  <p class="g--margin-vertical-2">
+    <span class="c-articulo__precio c-articulo__precio--actual">{{precioActual | currency}}</span>
+    &nbsp;
+    <span class="c-articulo__precio c-articulo__precio--anterior">{{precioAnterior | currency}}</span>
+  </p>
+  <p>
+    <span class="c-articulo__valoracion">{{valoracion}}/5</span>&nbsp;
+    <span class="g--font-size-4">⭐</span>&nbsp;
+    <span class="c-articulo__opiniones">{{numeroOpiniones}} opiniones</span>
+  </p>
+  <p class="">
+    🚚&nbsp;
+    <span class="c-articulo__entrega c-articulo__entrega--positivo">{{precioEnvio | currency}}</span>&nbsp;
+    <span class="c-articulo__entrega c-articulo__entrega--negativo">{{fechaEntrega| date:'shortDate'}}</span>
+  </p>
+  <p class="c-articulo__otras-opciones g--margin-top-2">
+    Otras opciones disponibles
+  </p>
+</div>
