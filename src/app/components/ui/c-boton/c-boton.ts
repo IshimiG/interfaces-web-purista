@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-c-boton',
+  selector: 'c-boton',
   imports: [],
   templateUrl: './c-boton.html',
   styleUrl: './c-boton.scss',
 })
 export class CBoton {
-
+  @Input() funcion:'primaria' | 'secundaria' | 'peligrosa' = 'primaria';
 }

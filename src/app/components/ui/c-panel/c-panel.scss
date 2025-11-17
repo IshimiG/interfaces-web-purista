@@ -1,0 +1,66 @@
+.c-panel {
+    --c-panel-border-color: var(--mlt-sys-color-principal-5);
+    --c-panel-border-radius: var(--mlt-sys-border-radius-5);
+    --c-panel-border-width: var(--mlt-sys-border-width-4);
+    --c-panel-font-size: var(--mlt-sys-font-size-4);
+    --c-panel-margin: var(--mlt-sys-margin-4);
+    --c-panel-color: var(--mlt-sys-color-blanco-9);
+
+    border-width: var(--c-panel-border-width);
+    border-color: var(--c-panel-border-color);
+    border-radius: var(--c-panel-border-radius);
+    border-style: solid;
+    font-size: var(--c-panel-font-size);
+    margin: var(--c-panel-margin);
+    color: var(--c-panel-color);
+
+    &__cabecera {
+        --c-panel-cabecera-background-color: var(--mlt-sys-color-principal-5);
+        --c-panel-cabecera-padding: var(--mlt-sys-padding-5);
+        --c-panel-cabecera-color: var(--mlt-sys-color-blanco-9);
+        --c-panel-cabecera-font-size: var(--mlt-sys-font-size-5);
+        --c-panel-cabecera-font-weight: var(--mlt-sys-font-weight-7);
+        background-color: var(--c-panel-cabecera-background-color);
+        padding: var(--c-panel-cabecera-padding);
+        color: var(--c-panel-cabecera-color);
+        font-size: var(--c-panel-cabecera-font-size);
+        font-weight: var(--c-panel-cabecera-font-weight);
+
+    }
+    &__cuerpo {
+
+        --c-panel-cuerpo-padding: var(--mlt-sys-padding-3);
+        --c-panel-cuerpo-color: var(--mlt-sys-color-principal-1);
+        padding: var(--c-panel-cuerpo-padding);
+        color: var(--c-panel-cuerpo-color);
+        
+        &--contenido {
+            --c-panel-cuerpo-contenido-font-size: var(--mlt-sys-font-size-4);
+            --c-panel-cuerpo-contenido-margin-bottom: var(--mlt-sys-margin-3);
+            --c-panel-cuerpo-contenido-color: var(--mlt-sys-color-principal-1);
+            font-size: var(--c-panel-cuerpo-contenido-font-size);
+            margin-bottom: var(--c-panel-cuerpo-contenido-margin-bottom);
+            color: var(--c-panel-cuerpo-contenido-color);
+        }
+    }
+
+    &--azul {
+    --c-panel-border-color: var(--mlt-sys-color-principal-5);
+        .c-panel__cabecera {
+            --c-panel-cabecera-background-color: var(--mlt-sys-color-principal-5);
+        }
+    }
+
+    &--rojo {
+        --c-panel-border-color: var(--mlt-sys-color-rojo-5);
+        .c-panel__cabecera {
+            --c-panel-cabecera-background-color: var(--mlt-sys-color-rojo-5);
+        }
+    }
+    &--verde {
+        --c-panel-border-color: var(--mlt-sys-color-alternativo-5);
+        .c-panel__cabecera {
+            --c-panel-cabecera-background-color: var(--mlt-sys-color-alternativo-5);
+        }
+    }
+}

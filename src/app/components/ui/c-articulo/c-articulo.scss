@@ -1,7 +1,7 @@
 
 .c-articulo {
-  --c-articulo-font-family: var(--mlt-sys-font-family-ponnala);
-  --c-articulo-width:var(--mlt-sys-width-197);
+  --c-articulo-font-family: var(--mlt-sys-font-family-sans-serif);
+  --c-articulo-width:var(--mlt-sys-width-12);
   --c-articulo-font-size-small: var(--mlt-sys-font-size-2);
   --c-articulo-font-size-medium: var(--mlt-sys-font-size-6);
   --c-articulo-font-size-large: var(--mlt-sys-font-size-8);
@@ -13,12 +13,13 @@
 
 
   font-family: var(--c-articulo-font-family);
-  width: 197px;
+  width: var(--c-articulo-width);
  
   &__title {
     font-size: var(--c-articulo-font-size-large);
     font-weight: 500;
     color: var(--c-articulo-title-color);
+
   }
  
   &__precio {

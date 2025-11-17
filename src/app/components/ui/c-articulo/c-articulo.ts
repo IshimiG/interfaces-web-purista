@@ -1,11 +1,11 @@
-import {Component, EventEmitter, HostBinding, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, HostBinding, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import {CommonModule} from '@angular/common';
  
 @Component({
   selector: 'c-articulo',
   imports: [CommonModule],
   templateUrl: './c-articulo.html',
-  styleUrl: './c-articulo.scss'
+  styleUrl: './c-articulo.scss',
 })
 export class CArticulo implements OnInit  {
   @Input() nombre:string="";

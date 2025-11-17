@@ -1,0 +1,54 @@
+.c-boton {
+    --c-botton-font-family: var(--mlt-sys-font-family-sans-serif);
+    --c-boton-font-size: var(--mlt-sys-font-size-4);
+    --c-boton-padding: var(--mlt-sys-padding-4);
+    --c-boton-border-radius: var(--mlt-sys-border-radius-4);
+    --c-boton-border-width: var(--mlt-sys-border-width-2);
+    --c-boton-border-color: var(--mlt-sys-color-principal-7);
+    --c-boton-background-color: var(--mlt-sys-color-principal-5);
+    --c-boton-color: var(--mlt-sys-color-blanco-9);
+
+
+    font-family: var(--c-boton-font-family);
+    font-size: var(--c-boton-font-size);
+    padding: var(--c-boton-padding);
+    border-radius: var(--c-boton-border-radius);
+    border-width: var(--c-boton-border-width);
+    border-color: var(--c-boton-border-color);
+    background-color: var(--c-boton-background-color);
+    color: var(--c-boton-color);
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.funcion--primaria {
+    --c-boton-border-color: var(--mlt-sys-color-principal-7);
+    --c-boton-background-color: var(--mlt-sys-color-principal-5);
+    --c-boton-color: var(--mlt-sys-color-blanco-9);
+
+    border-color: var(--c-boton-border-color);
+    background-color: var(--c-boton-background-color);
+    color: var(--c-boton-color);
+}
+
+.funcion--secundaria {
+    --c-boton-border-color: var(--mlt-sys-color-alternativo-7);
+    --c-boton-background-color: var(--mlt-sys-color-alternativo-5);
+    --c-boton-color: var(--mlt-sys-color-blanco-9);
+
+    border-color: var(--c-boton-border-color);
+    background-color: var(--c-boton-background-color);
+    color: var(--c-boton-color);
+}
+
+.funcion--peligrosa {
+    --c-boton-border-color: var(--mlt-sys-color-rojo-7);
+    --c-boton-background-color: var(--mlt-sys-color-rojo-5);
+    --c-boton-color: var(--mlt-sys-color-blanco-9);
+
+    border-color: var(--c-boton-border-color);
+    background-color: var(--c-boton-background-color);
+    color: var(--c-boton-color);
+}

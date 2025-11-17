@@ -1,8 +1,12 @@
 $paddings:(0px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 56px, 64px);
+
 $margins:(0px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 56px, 64px);
+
+$widths: (10%, 12%, 14%, 16%, 18%, 20%, 24%, 30%, 36%, 48%, 60%, 72%, 96%);
+
 $border-radius:(0px, 2px, 4px, 6px, 8px, 12px, 16px, 20px, 24px);
-$font-sizes:(10px, 12px, 14px, 16px, 18px, 20px, 24px, 30px, 36px, 48px, 60px, 72px, 96px);
-$widths:(10, 12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72, 96);
+$border-width:(0px, 2px, 4px, 6px, 8px, 12px, 16px, 20px, 24px);
+
 $colores:(
   'principal': (#011019, #052F4D, #0B4D83, #1363B4, #1979E6, #4B8EEC, #80ADF4, #B2CAFA, #E6EDFE),
   'alternativo': (#190801, #4D1D05, #83370B, #B45613, #E67519, #EC9C4B, #F4BE80, #FADCB2, #FEF5E6),
@@ -11,6 +15,13 @@ $colores:(
   'blanco': (#EBEBEB, #EDEDED, #F0F0F0, #F2F2F2, #F5F5F5, #F7F7F7, #FAFAFA, #FCFCFC, #FFFFFF),
   'amarillo': (#6D5303, #9A7809, #C69C10, #E9BC1C, #ECC94B, #F2D978, #F7E7A6, #FCF4CF, #FFFFFF)
 );
+
+$font-sizes:(10px, 12px, 14px, 16px, 18px, 20px, 24px, 30px, 36px, 48px, 60px, 72px, 96px);
 $font-families:(
+  'arial': "Arial",
+  'sans-serif': "Sans-Serif",
+  'roboto': "Roboto",
+  'opensans': "Open Sans",
  'ponnala': "Ponnala",
 );
+$font-weights:(100, 200, 300, 400, 500, 600, 700, 800, 900);
